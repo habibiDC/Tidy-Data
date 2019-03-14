@@ -12,6 +12,6 @@ Data set: meanbyidactivity\
 Variables:      \
 ID: ID of participants\
 		\
-activity : activity factors - 1 WALKING,WALKING UPSTAIRS,WALKING DOWNSTAIRS, 		SITTING, STANDING, LAYING\
+activity : activity factors - WALKING,WALKING UPSTAIRS,WALKING DOWNSTAIRS, 		SITTING, STANDING, LAYING\
 		\
 bodyacc_xmean,bodyacc_ymean,bodyacc_zmean,bodygyro_xmean,bodygyro_ymean, bodygyro_zmean,totalacc_xmean,totalacc_ymean,totalacc_zmean:  the average of measurement grouped by ID and activity.}
