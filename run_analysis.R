@@ -82,8 +82,7 @@ label[[1]]<-revalue(as.factor(label[[1]]),c('1'='WALKING','2'='WALKING UPSTAIR',
 #average of each variable for each activity and each subject.
 colnames(Subject)<-'ID'; colnames(label)<-'activity'
 meanbyidactivity<-cbind(Subject,label,meansd)
-meanbyidactivity %>% group_by(ID,activity) %>% summarize_at(vars(bodyacc_xmean,bodyacc_ymean,bodyacc_zmean,bodygyro_xmean,bodygyro_ymean,
-                                                  bodygyro_zmean,totalacc_xmean,totalacc_ymean,totalacc_zmean),mean)
+meanbyidactivity %>% group_by(ID,activity) %>% summarize_at(vars(bodyacc_xmean:totalacc_zsd),mean)
 #write files to .txt
 write.table(meanbyidactivity,file='~/R/data/UCI HAR Dataset/tidy data/meanbyidactivity.txt',row.names = FALSE)
 
